@@ -1,0 +1,31 @@
+add_newline = false
+format = """
+$username@$hostname $directory$fill$git_branch $git_status
+$shell $character
+"""
+
+[directory]
+truncate_to_repo = false
+format = "[$path]($style)"
+
+[git_branch]
+always_show_remote = true
+format = "[$symbol$remote_name/$branch]($style)"
+
+[git_status]
+format = "[$all_status$ahead_behind]($style)"
+
+[hostname]
+ssh_only = false
+format = "[$hostname]($style)"
+style = "bold dimmed blue"
+disabled = false
+
+[shell]
+format = '[\[$indicator\]]($style)'
+style = "bold dimmed green"
+disabled = false
+
+[username]
+format = "[$user]($style)"
+show_always = true
