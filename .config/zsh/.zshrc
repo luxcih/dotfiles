@@ -1,1 +1,1 @@
-eval "$(starship init zsh)"
+exec fish
