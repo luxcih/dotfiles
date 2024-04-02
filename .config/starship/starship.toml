@@ -1,12 +1,12 @@
 add_newline = false
 format = """
-$username@$hostname $directory$fill$git_branch $git_status
-$shell $character
+$shell $directory $character
 """
 
 [directory]
 truncate_to_repo = false
 format = "[$path]($style)"
+style = "bold yellow"
 
 [git_branch]
 always_show_remote = true
@@ -22,8 +22,9 @@ style = "bold dimmed blue"
 disabled = false
 
 [shell]
+fish_indicator = "⋊>"
 format = '[\[$indicator\]]($style)'
-style = "bold dimmed green"
+style = "bold blue"
 disabled = false
 
 [username]
