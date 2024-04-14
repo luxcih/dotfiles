@@ -104,21 +104,8 @@
     // Display line endings in the status bar
     "show_line_endings": true,
 
-    // remember_full_screen will allow Sublime Text to start in full screen
-    // mode if it was exited in full screen mode. When set to false, Sublime
-    // Text will never start in full screen mode.
-    "remember_full_screen": true,
-
     // remember_workspace makes Sublime Text remember what workspace each window
     // was in last. When set to false the OS left to determine which workspace
     // a window is opened in. This doesn't work with Wayland.
-    "remember_workspace": true,
-
-    // remember_layout makes Sublime Text start with the same layout it closed
-    // with. Only applies when hot_exit is disabled.
-    "remember_layout": true,
-    "ignored_packages":
-    [
-		"Vintage",
-    ],
+    "remember_workspace": false,
 }
