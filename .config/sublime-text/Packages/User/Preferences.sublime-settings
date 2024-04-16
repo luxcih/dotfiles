@@ -108,4 +108,12 @@
     // was in last. When set to false the OS left to determine which workspace
     // a window is opened in. This doesn't work with Wayland.
     "remember_workspace": false,
+
+    // File indexing parses all files in the sidebar, and builds an index of
+    // their symbols. This is required for Goto Definition to work.
+    "index_files": true,
+
+    // List any packages to ignore here. When removing entries from this list,
+    // a restart may be required if the package contains plugins.
+    "ignored_packages": ["Vintage"]
 }
