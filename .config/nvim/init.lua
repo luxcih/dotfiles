@@ -5,5 +5,5 @@ require("base.bootstrap")
 require("user.config")
 require("user.mappings")
 
--- Initialize lazy.nvim
-require("lazy").setup()
+-- Initialize base setup
+require("base.setup")
