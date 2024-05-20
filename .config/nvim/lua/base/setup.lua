@@ -2,8 +2,9 @@ local lazy_config = {
     install = {
         colorscheme = { "catppuccin" },
     },
-    spec = {
-        event = "VeryLazy",
+    defaults = {
+        lazy = true,
+        version = "*",
     },
 }
 
