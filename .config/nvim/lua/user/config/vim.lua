@@ -1,3 +1,7 @@
+-- Set the leader key for the mappings
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 -- Disable some built-in plugins we don't need
 vim.g.loaded_netrw = 1         -- Disable netrw
 vim.g.loaded_netrwPlugin = 1   -- Disable netrwPlugin
@@ -43,3 +47,4 @@ vim.opt.mouse = "a" -- Enable mouse in all modes
 -- Miscellaneous settings
 vim.opt.shortmess:append("sI")     -- Disable startup messages and ins-completion-menu messages
 vim.opt.whichwrap:append("<>[]hl") -- Allow specified keys to wrap to next/previous line
+vim.opt.rtp:prepend(require("user.config.lazy").path) -- Add lazy to runtime-path
