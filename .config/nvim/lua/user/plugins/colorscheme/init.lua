@@ -1,11 +1,3 @@
 return {
-    { -- catppuccin colorscheme
-        "catppuccin/nvim",
-        name = "catppuccin",
-        lazy = false,
-        priority = 1000,
-        config = function()
-            vim.cmd.colorscheme("catppuccin")
-        end,
-    },
+    require("user.plugins.colorscheme.catppuccin")
 }
