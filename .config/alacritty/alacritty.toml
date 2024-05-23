@@ -7,6 +7,9 @@ normal = { family = "MesloLGS Nerd Font" }
 [window]
 padding = { x = 2, y = 0}
 
+[colors]
+draw_bold_text_with_bright_colors = true
+
 [colors.primary]
 background = "#1E1E2E"
 foreground = "#CDD6F4"
