@@ -18,7 +18,7 @@ M.config = function()
         ["Q"] = { "<cmd>q!<cr>", "Quit (forced)" },
         ["w"] = { "<cmd>w<cr>", "Write" },
         ["W"] = { "<cmd>w!<cr>", "Write (forced)" },
-    })
+    }, { prefix = "<leader>" })
 
     wk.register({
         ["q"] = { "<cmd>qa<cr>", "Quit all" },
@@ -49,6 +49,16 @@ M.config = function()
 
     wk.register({
         ["m"] = { "<cmd>Mason<cr>", "Mason" },
+    }, { prefix = "<leader>" })
+
+    wk.register({
+        ["d"] = {
+            name = "diagnostic",
+            ["d"] = { vim.diagnostic.open_float, "View diagnostic" },
+            ["n"] = { vim.diagnostic.goto_next, "Go to the next diagnostic" },
+            ["p"] = { vim.diagnostic.goto_prev, "Go to the previous diagnostic" },
+            ["a"] = { vim.lsp.buf.code_action, "Code action" },
+        },
     }, { prefix = "<leader>" })
 
     wk.register({
