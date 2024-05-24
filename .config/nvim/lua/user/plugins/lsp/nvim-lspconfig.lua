@@ -15,6 +15,7 @@ M.config = function()
     lspconfig.clangd.setup({ capabilities = capabilities })
     lspconfig.cmake.setup({ capabilities = capabilities })
     lspconfig.lua_ls.setup({ capabilities = capabilities })
+    lspconfig.mesonlsp.setup({ capabilities = capabilities })
     lspconfig.pyright.setup({ capabilities = capabilities })
 end
 

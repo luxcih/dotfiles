@@ -7,6 +7,7 @@ M.opts = {
         "clangd",
         "cmake",
         "lua_ls",
+        "mesonlsp",
         "pyright",
     }
 }
