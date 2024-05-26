@@ -9,6 +9,7 @@ M.config = function(_, opts)
             "c",
             "cmake",
             "cpp",
+            "fish",
             "lua",
             "markdown",
             "python",
