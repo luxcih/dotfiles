@@ -16,3 +16,5 @@
 [user]
 	email = luxcih.me@gmail.com
 	name = Luxcih
+[init]
+	defaultBranch = main
