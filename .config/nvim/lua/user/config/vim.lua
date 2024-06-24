@@ -20,6 +20,7 @@ vim.opt.shiftwidth = 4         -- Number of spaces to use for each step of (auto
 -- Cursor settings
 vim.opt.cursorline = true      -- Highlight the screen line of the cursor
 vim.opt.cursorlineopt = "both" -- Highlight both line and column of the cursor
+vim.opt.scrolloff = 999
 
 -- Timeout settings
 vim.opt.timeout = true         -- Enable timeout for mapped sequences
