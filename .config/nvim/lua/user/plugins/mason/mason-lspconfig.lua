@@ -9,6 +9,7 @@ M.opts = {
         "lua_ls",
         "mesonlsp",
         "pyright",
+        "zls",
     }
 }
 
