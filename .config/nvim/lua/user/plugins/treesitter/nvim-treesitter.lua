@@ -15,6 +15,7 @@ M.config = function(_, opts)
             "python",
             "toml",
             "yaml",
+            "zig",
         },
         highlight = { enable = true },
         incremental_selection = { enable = true },
