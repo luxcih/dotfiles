@@ -1,6 +1,6 @@
 local M = { "akinsho/bufferline.nvim" }
 
-M.event = "VeryLazy"
+M.event = { "BufNewFile", "BufReadPre", "InsertEnter", "VeryLazy" }
 M.dependencies = {
     "nvim-tree/nvim-web-devicons",
     "famiu/bufdelete.nvim",

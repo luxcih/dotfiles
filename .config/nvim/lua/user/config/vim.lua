@@ -1,6 +1,6 @@
 -- Set the leader key for the mappings
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.mapleader = " "          -- Set map leader key to space
+vim.g.maplocalleader = " "     -- Set local map leader key to space
 
 -- Disable some built-in plugins we don't need
 vim.g.loaded_netrw = 1         -- Disable netrw
@@ -20,7 +20,7 @@ vim.opt.shiftwidth = 4         -- Number of spaces to use for each step of (auto
 -- Cursor settings
 vim.opt.cursorline = true      -- Highlight the screen line of the cursor
 vim.opt.cursorlineopt = "both" -- Highlight both line and column of the cursor
-vim.opt.scrolloff = 999
+vim.opt.scrolloff = 999        -- Center pointer
 
 -- Timeout settings
 vim.opt.timeout = true         -- Enable timeout for mapped sequences
@@ -31,6 +31,9 @@ vim.opt.number = true          -- Show line numbers
 vim.opt.undofile = true        -- Enable persistent undo
 vim.opt.smartcase = true       -- Enable smart case search
 vim.opt.termguicolors = true   -- Enable 24-bit RGB color in the TUI
+vim.opt.relativenumber = true  -- Relative line numbers
+vim.opt.numberwidth = 1        -- Line numbers width
+vim.opt.signcolumn = "yes"     -- Always show signcolumn
 
 vim.opt.laststatus = 3         -- Global statusline
 vim.opt.hlsearch = false       -- Disable search highlighting

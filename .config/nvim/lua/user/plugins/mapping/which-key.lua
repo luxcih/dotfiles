@@ -83,6 +83,15 @@ M.config = function()
             ["g"] = { "<cmd>Telescope live_grep<cr>", "Live grep" },
         },
     }, { prefix = "<leader>" })
+
+    wk.register({
+        ["b"] = {
+            name = "tabline",
+            ["o"] = { "<cmd>set showtabline=2<cr>", "Open" },
+            ["x"] = { "<cmd>set showtabline=0<cr>", "Close" },
+            ["b"] = { "<cmd>execute 'set showtabline=' . (&showtabline ==# 0 ? 2 : 0)<cr>", "Toggle" },
+        },
+    }, { prefix = "<leader>" })
 end
 
 return M
