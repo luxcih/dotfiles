@@ -253,6 +253,12 @@ globalkeys = gears.table.join(
     awful.key({ modkey,           }, "w", function () mymainmenu:show() end,
               {description = "show main menu", group = "awesome"}),
 
+    -- Brightness
+    awful.key({ }, "XF86MonBrightnessDown", function ()
+            awful.spawn("xbacklight -dec 15") end),
+    awful.key({ }, "XF86MonBrightnessUp", function ()
+            awful.spawn("xbacklight -inc 15") end),
+
     -- Layout manipulation
     awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
               {description = "swap with next client by index", group = "client"}),
