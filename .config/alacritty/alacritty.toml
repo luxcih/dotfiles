@@ -2,7 +2,7 @@
 TERM = "xterm-256color"
 
 [font]
-size = 10.5
+size = 8
 normal = { family = "MesloLGS Nerd Font" }
 
 [window]
