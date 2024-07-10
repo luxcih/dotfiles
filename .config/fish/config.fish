@@ -1,12 +1,3 @@
-if status is-interactive
-and not set -q TMUX
-    if tmux has-session
-        exec tmux attach-session
-    else
-        exec tmux new-session
-    end
-end
-
 set fish_greeting
 
 set -gx EDITOR  nvim
