@@ -5,6 +5,9 @@ font pango:DejaVu Sans Mono 8
 # Start XDG autostart .desktop files using dex
 exec --no-startup-id dex --autostart --environment i3
 
+# Start compositor picom
+exec_always --no-startup-id picom &
+
 # Adjust volume
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%+ && $refresh_i3status
