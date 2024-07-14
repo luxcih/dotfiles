@@ -1,0 +1,104 @@
+configuration {
+    modes: [run, drun, window];
+    font: "DejaVuSansM Nerd Font Bold 12";
+    show-icons: true;
+    icon-theme: "Papirus";
+    terminal: "alacritty";
+    display-run: "  Run";
+    display-drun: "  Applications";
+    display-window: "󰕰 Windows";
+    drun-display-format: "{icon} {name}";
+    sidebar-mode: true;
+}
+
+@theme "/dev/null"
+@import "colors"
+
+window {
+    children: [mainbox];
+    width: 720px;
+    height: 480px;
+    border: 2px;
+    border-radius: 8px;
+    text-color: @text;
+    border-color: @blue;
+    background-color: @base;
+    location: center;
+}
+
+mainbox {
+    children: [mode-switcher, inputbar, listview];
+    text-color: inherit;
+    background-color: inherit;
+}
+
+inputbar {
+    children: [entry];
+    text-color: inherit;
+    background-color: inherit;
+}
+
+entry {
+    placeholder: "Search...";
+    padding: 8px 12px;
+    text-color: @subtext1;
+    background-color: inherit;
+}
+
+listview {
+    children: [element, scrollbar];
+    orientation: vertical;
+    text-color: inherit;
+    background-color: inherit;
+    scrollbar: true;
+}
+
+element {
+    children: [element-icon, element-text];
+    orientation: horizontal;
+    padding: 8px;
+    text-color: inherit;
+    background-color: inherit;
+}
+
+element-icon {
+    size: 25px;
+    text-color: inherit;
+    background-color: inherit;
+}
+
+element-text {
+    font: "DejaVuSansM Nerd Font 12";
+    vertical-align: 0.5;
+    text-color: inherit;
+    background-color: inherit;
+}
+
+element selected {
+    text-color: @blue;
+    background-color: @surface0;
+}
+
+scrollbar {
+    handle-width: 10px;
+    handle-color: @blue;
+    background-color: inherit;
+}
+
+mode-switcher {
+    children: [button];
+    orientation: horizontal;
+    text-color: inherit;
+    background-color: inherit;
+}
+
+button {
+    padding: 8px;
+    text-color: inherit;
+    background-color: inherit;
+}
+
+button selected {
+    text-color: @blue;
+    background-color: @surface0;
+}
