@@ -32,6 +32,24 @@ mainbox {
     background-color: inherit;
 }
 
+mode-switcher {
+    children: [button];
+    orientation: horizontal;
+    text-color: inherit;
+    background-color: inherit;
+}
+
+button {
+    padding: 8px 0px;
+    text-color: inherit;
+    background-color: @base;
+}
+
+button selected {
+    text-color: @blue;
+    background-color: @surface0;
+}
+
 inputbar {
     children: [entry];
     text-color: inherit;
@@ -39,9 +57,10 @@ inputbar {
 }
 
 entry {
-    placeholder: "Search...";
     padding: 8px 12px;
-    text-color: @subtext1;
+    placeholder: "Search...";
+    font: "DejaVuSansM Nerd Font 12";
+    text-color: inherit;
     background-color: inherit;
 }
 
@@ -56,20 +75,8 @@ listview {
 element {
     children: [element-icon, element-text];
     orientation: horizontal;
-    padding: 8px;
-    text-color: inherit;
-    background-color: inherit;
-}
-
-element-icon {
-    size: 25px;
-    text-color: inherit;
-    background-color: inherit;
-}
-
-element-text {
+    padding: 4px 8px;
     font: "DejaVuSansM Nerd Font 12";
-    vertical-align: 0.5;
     text-color: inherit;
     background-color: inherit;
 }
@@ -79,26 +86,21 @@ element selected {
     background-color: @surface0;
 }
 
+element-icon {
+    size: 30px;
+    text-color: inherit;
+    background-color: inherit;
+}
+
+element-text {
+    vertical-align: 0.5;
+    font: inherit;
+    text-color: inherit;
+    background-color: inherit;
+}
+
 scrollbar {
     handle-width: 10px;
     handle-color: @blue;
     background-color: inherit;
-}
-
-mode-switcher {
-    children: [button];
-    orientation: horizontal;
-    text-color: inherit;
-    background-color: inherit;
-}
-
-button {
-    padding: 8px;
-    text-color: inherit;
-    background-color: inherit;
-}
-
-button selected {
-    text-color: @blue;
-    background-color: @surface0;
 }
