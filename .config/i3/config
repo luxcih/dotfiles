@@ -1,12 +1,60 @@
+# Catppuccin Mocha colorscheme
+set $rosewater #f5e0dc
+set $flamingo #f2cdcd
+set $pink #f5c2e7
+set $mauve #cba6f7
+set $red #f38ba8
+set $maroon #eba0ac
+set $peach #fab387
+set $yellow #f9e2af
+set $green #a6e3a1
+set $teal #94e2d5
+set $sky #89dceb
+set $sapphire #74c7ec
+set $blue #89b4fa
+set $lavender #b4befe
+set $text #cdd6f4
+set $subtext1 #bac2de
+set $subtext0 #a6adc8
+set $overlay2 #9399b2
+set $overlay1 #7f849c
+set $overlay0 #6c7086
+set $surface2 #585b70
+set $surface1 #45475a
+set $surface0 #313244
+set $base #1e1e2e
+set $mantle #181825
+set $crust #11111b
+
+# Change colors
+# target                title bg    text  indicator  border
+client.focused          $base $base $text $rosewater $base
+client.focused_inactive $base $base $text $rosewater $base
+client.unfocused        $base $base $text $rosewater $base
+client.urgent           $base $base $text $rosewater $base
+client.placeholder      $base $base $text $rosewater $base
+client.background       $base
+
+# Set font to use
+font pango:DejaVu Sans Mono 8
+
+# Set mod key to use
 set $mod Mod4
 
-font pango:DejaVu Sans Mono 8
+# Set wallpaper variable
+set $wallpaper ~/Pictures/wallpaper.svg
 
 # Start XDG autostart .desktop files using dex
 exec --no-startup-id dex --autostart --environment i3
 
 # Start compositor picom
 exec_always --no-startup-id picom &
+
+# Start launch polybar
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+# Start feh background fill wallpaper
+exec_always --no-startup-id feh --bg-fill $wallpaper
 
 # Adjust volume
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -98,7 +146,9 @@ bindsym $mod+Shift+r restart
 # Exit i3
 bindsym $mod+Shift+e exit
 
-# Configure i3bar
-bar {
-    status_command i3status
-}
+# Autoload on startup
+assign [class="firefox"] $ws1
+assign [class="discord"] $ws9
+
+exec --no-startup-id firefox
+exec --no-startup-id discord
