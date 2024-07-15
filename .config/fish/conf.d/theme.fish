@@ -1,3 +1,4 @@
+# Catppuccin Mocha colorscheme
 set fish_color_normal cdd6f4
 set fish_color_command 89b4fa
 set fish_color_param f2cdcd
