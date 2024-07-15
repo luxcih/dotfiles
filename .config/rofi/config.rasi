@@ -12,7 +12,7 @@ configuration {
 }
 
 @theme "/dev/null"
-@import "colors"
+@import "theme"
 
 window {
     children: [mainbox];
