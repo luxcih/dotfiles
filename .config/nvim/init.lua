@@ -1,1 +1,3 @@
-require("user.config").lazy.setup()
+local config = require("config")
+
+config.setup()
