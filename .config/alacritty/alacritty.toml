@@ -4,7 +4,7 @@ import = ["~/.config/alacritty/theme.toml"]
 TERM = "xterm-256color"
 
 [font]
-size = 8
+size = 8.5
 normal = { family = "DejaVuSansM Nerd Font" }
 
 [window]
