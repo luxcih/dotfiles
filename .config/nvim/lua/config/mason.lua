@@ -1,7 +1,14 @@
 local M = {}
 
 M.opts_lspconfig = {
-    ensure_installed = { "lua_ls", "zls" },
+    ensure_installed = {
+        "bashls",
+        "lua_ls",
+        "pyright",
+        "ruff",
+        "ruff_lsp",
+        "zls",
+    },
 }
 
 M.opts_dap = {

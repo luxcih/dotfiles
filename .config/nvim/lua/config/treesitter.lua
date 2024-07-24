@@ -2,6 +2,7 @@ local M = {}
 
 M.opts = {
     ensure_installed = {
+        "bash",
         "c",
         "lua",
         "python",
