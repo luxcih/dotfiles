@@ -29,6 +29,14 @@ M.cmp_icons = {
     TypeParameter = "",
 }
 
+M.opts = function(_, opts)
+    opts.sources = opts.sources or {}
+    table.insert(opts.sources, {
+        "lazydev",
+        group_index = 0,
+    })
+end
+
 M.setup = function(plugin, opts)
     local cmp = require("cmp")
 
