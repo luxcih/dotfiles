@@ -1,0 +1,8 @@
+[user]
+	name = Luxcih
+	email = luxcih.me@gmail.com
+[core]
+	editor = nvim
+	autocrlf = input
+[init]
+	defaultBranch = main
