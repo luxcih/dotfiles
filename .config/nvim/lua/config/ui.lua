@@ -1,5 +1,7 @@
 local M = {}
 
+M.cond = false
+
 M.opts = {
     lsp = {
         override = {
