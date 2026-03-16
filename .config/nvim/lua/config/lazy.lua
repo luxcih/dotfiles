@@ -3,9 +3,8 @@ local M = {}
 M.path = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 M.repo = "https://github.com/folke/lazy.nvim.git"
 
--- Nil if lazy install path doesn't exist
--- Use to check if done bootstrap lazy
 M.status = vim.uv.fs_stat(M.path)
+M.bootstrap_out = nil
 
 M.config = {
     defaults = { -- Default plugin specs
@@ -24,7 +23,7 @@ M.config = {
 
 M.bootstrap = function()
     -- Clone lazy using git
-    vim.fn.system({
+    M.bootstrap_out = vim.fn.system({
         "git",
         "clone",
         "--filter=blob:none",
@@ -38,6 +37,17 @@ M.setup = function()
     -- Bootstrap lazy if not already
     if not M.status then M.bootstrap() end
 
+    -- Check if something went wrong
+    if vim.v.shell_error ~= 0 then
+        vim.api.nvim_echo({
+            { "Failed to install lazy.nvim\n", "ErrorMsg"},
+            { M.bootstrap_out, "WarningMsg" },
+            { "\nPress any key to exit..." },
+            }, true, {}
+        )
+    end
+
+    -- Actually setup lazy and its keymaps
     local lazy = require("lazy")
     local keymaps = require("config.keymaps.lazy")
 
