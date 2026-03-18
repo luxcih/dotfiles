@@ -9,7 +9,6 @@ M[1].dependencies = {
     "nvim-treesitter/nvim-treesitter",
 }
 M[1].event = "VeryLazy"
-M[1].cond = config.cond
 M[1].opts = config.opts
 M[1].config = config.setup
 
