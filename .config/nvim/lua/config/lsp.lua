@@ -1,7 +1,9 @@
 local M = {}
 
 M.lsps = {
+    "clangd",
     "lua_ls",
+    "zls",
 }
 
 M.setup = function(plugin, opts)
