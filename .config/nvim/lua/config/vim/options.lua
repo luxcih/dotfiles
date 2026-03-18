@@ -4,6 +4,7 @@ M.setup = function()
     vim.opt.number = true -- Show line numbers
     vim.opt.relativenumber = true -- Enable relative line numbers
 
+    vim.opt.wrap = false
     vim.opt.autoindent = true
     vim.opt.smartindent = true
     vim.opt.shiftwidth = 4 -- Number of spaces to use
