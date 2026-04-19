@@ -3,6 +3,7 @@ local M = {}
 local config = require("config.ui")
 
 M[1] = { "folke/noice.nvim" }
+M[1].enabled = false
 M[1].dependencies = {
     "MunifTanjim/nui.nvim",
     "rcarriga/nvim-notify",
