@@ -3,6 +3,7 @@ local M = {}
 M.lsps = {
     "clangd",
     "lua_ls",
+    "pyright",
     "zls",
 }
 
