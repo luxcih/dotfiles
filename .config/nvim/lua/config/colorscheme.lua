@@ -1,9 +1,7 @@
 local M = {}
 
 M.setup = function()
-    local catppuccin = require("catppuccin")
-
-    catppuccin.load()
+    vim.cmd[[colorscheme habamax]]
 end
 
 return M
