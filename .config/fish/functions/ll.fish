@@ -1,3 +1,3 @@
-function ll --wraps="eza --icons -alh"
-    eza --icons -alh $argv
+function ll --wraps="eza --icons -lh"
+    eza --icons -lh $argv
 end

@@ -1,3 +1,3 @@
-function t --wraps="eza --icons --tree -a"
-    eza --icons --tree -a $argv
+function t --wraps="eza --icons --tree"
+    eza --icons --tree $argv
 end
