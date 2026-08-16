@@ -1,11 +1,11 @@
-local M = {}
+require("vim._core.ui2").enable()
+require("core.theme").init()
 
-M.lazy = require("config.lazy")
-M.vim = require("config.vim")
+require("config.globals")
+require("config.options")
+require("config.keymaps")
+require("config.autocmds")
+require("config.commands")
 
-M.setup = function()
-    M.vim.setup()
-    M.lazy.setup()
-end
-
-return M
+require("plugins")
+require("lsp")
