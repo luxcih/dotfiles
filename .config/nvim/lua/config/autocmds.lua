@@ -11,7 +11,7 @@ autocmd.create("TextYankPost", {
   group = yank,
   desc = "Highlight yanked text",
   callback = function()
-    vim.highlight.on_yank({
+    vim.hl.on_yank({
       timeout = 300,
       visual = true,
     })
