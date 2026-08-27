@@ -6,7 +6,6 @@ conform.setup({
     lsp_format = "fallback",
   },
   formatters_by_ft = {
-    asm = { "asmfmt" },
     c = { "clang_format" },
     css = { "prettier" },
     html = { "prettier" },
@@ -14,7 +13,7 @@ conform.setup({
     json = { "prettier" },
     lua = { "stylua" },
     markdown = { "prettier" },
-    python = { "isort", "black" },
+    python = { "ruff_fix", "ruff_format", "ruff_organize_imports" },
     typescript = { "prettier" },
   },
   format_on_save = {},
