@@ -54,5 +54,7 @@ vim.lsp.enable({
   "eslint",
   "html",
   "lua_ls",
+  "pyright",
+  "ruff",
   "ts_ls",
 })
