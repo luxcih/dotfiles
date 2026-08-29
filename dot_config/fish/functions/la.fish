@@ -1,3 +1,3 @@
-function la --wraps="eza --icons -a"
-    eza --icons -a $argv
+function la --wraps="eza --icons --git -a"
+    eza --icons --git -a $argv
 end
