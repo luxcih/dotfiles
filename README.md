@@ -1,39 +1,54 @@
-# My .dotfiles
+# My Dotfiles
 
-Here you'll find configurations for various tools and applications that I use daily. These dotfiles are managed using GNU Stow, making it easy to symlink configuration files into the appropriate locations.
+My personal configuration files for the tools and applications I use daily.
+
+These dotfiles are managed with [chezmoi](https://www.chezmoi.io/).
 
 ## Installation
 
-> You need to have GNU Stow installed on your system first, I use Arch BTW, so I'll have it installed using pacman:
-> ```bash
-> $ sudo pacman -S stow
-> ```
+Install chezmoi first, then initialize and apply this repository:
 
-To use my dotfiles, clone this repository into your home directory:
-
-```bash
-git clone https://github.com/luxcih/dotfiles ~/.dotfiles
-```
-
-Navigate to the `.dotfiles` directory
-
-```bash
-cd ~/.dotfiles
-```
-
-Use GNU Stow to symlink the configurations:
-
-```bash
-stow .
+```sh
+chezmoi init --apply https://github.com/luxcih/dotfiles.git
 ```
 
 ## Usage
 
-After symlinking the configurations, you can customize them further or start using them immediately. Any changes made to the files within the repository will be reflected in your home directory.
+### Update your dotfiles
 
-## Contributions
+Edit a managed file:
 
-Feel free to fork this repository, make changes, and submit pull requests. I'm open to suggestions for improvements or new configurations.
+```sh
+chezmoi edit ~/.config/fish/config.fish
+```
+
+Preview pending changes:
+
+```sh
+chezmoi diff
+```
+
+Apply changes:
+
+```sh
+chezmoi apply
+```
+
+### Update the repository
+
+Enter the chezmoi source directory:
+
+```sh
+chezmoi cd
+```
+
+Then commit and push your changes:
+
+```sh
+git add .
+git commit -m "Update dotfiles"
+git push
+```
 
 ## License
 
