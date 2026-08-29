@@ -1,3 +1,3 @@
-function t --wraps="eza --icons --tree"
-    eza --icons --tree $argv
+function t --wraps="eza --icons --tree --git-ignore"
+    eza --icons --tree --git-ignore $argv
 end
