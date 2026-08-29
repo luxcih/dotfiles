@@ -1,16 +1,26 @@
 [user]
     name = Luxcih
     email = luxcih.me@gmail.com
+
 [core]
     editor = nvim
     autocrlf = input
+
 [init]
     defaultBranch = main
+
 [alias]
-    s = status
-    l = log --oneline --graph --decorate
+    s = status -sb
+    l = log --oneline --graph --decorate --all
     cm = commit -m
+    a = add
+    aa = add -A
+    d = diff
+    ds = diff --staged
+    b = branch
+
 [credential "https://github.com"]
-	helper = !gh auth git-credential
+    helper = !gh auth git-credential
+
 [credential "https://gist.github.com"]
-	helper = !gh auth git-credential
+    helper = !gh auth git-credential
