@@ -61,3 +61,41 @@ git:
   typechange: {foreground: "#F5C2E7"}
   ignored: {foreground: "#7F849C"}
   conflicted: {foreground: "#EBA0AC"}
+
+git_repo:
+  branch_main: {foreground: "#CDD6F4"}
+  branch_other: {foreground: "#CBA6F7"}
+  git_clean: {foreground: "#A6E3A1"}
+  git_dirty: {foreground: "#F38BA8"}
+
+security_context:
+  colon: {foreground: "#7F849C"}
+  user: {foreground: "#BAC2DE"}
+  role: {foreground: "#CBA6F7"}
+  typ: {foreground: "#585B70"}
+  range: {foreground: "#CBA6F7"}
+
+file_type:
+  image: {foreground: "#F9E2AF"}
+  video: {foreground: "#F38BA8"}
+  music: {foreground: "#A6E3A1"}
+  lossless: {foreground: "#94E2D5"}
+  crypto: {foreground: "#585B70"}
+  document: {foreground: "#CDD6F4"}
+  compressed: {foreground: "#F5C2E7"}
+  temp: {foreground: "#EBA0AC"}
+  compiled: {foreground: "#74C7EC"}
+  build: {foreground: "#585B70"}
+  source: {foreground: "#89B4FA"}
+
+punctuation: {foreground: "#7F849C"}
+date: {foreground: "#F9E2AF"}
+inode: {foreground: "#A6ADC8"}
+blocks: {foreground: "#9399B2"}
+header: {foreground: "#CDD6F4"}
+octal: {foreground: "#94E2D5"}
+flags: {foreground: "#CBA6F7"}
+
+symlink_path: {foreground: "#89DCEB"}
+control_char: {foreground: "#74C7EC"}
+broken_symlink: {foreground: "#F38BA8"}
