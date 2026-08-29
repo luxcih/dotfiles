@@ -19,6 +19,12 @@
     ds = diff --staged
     b = branch
 
+[fetch]
+    prune = true
+
+[rerere]
+    enabled = true
+
 [credential "https://github.com"]
     helper = !gh auth git-credential
 
